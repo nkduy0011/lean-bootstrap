@@ -43,7 +43,7 @@
 					  	</ul>
 					</div>
 			 	</div>
-				<ul class="nav col-md-8 menu-solid d-flex justify-content-end">
+				<ul class="nav col-md-8 menu-solid d-none d-md-flex justify-content-end">
 				  <li class="nav-item"><a href="#">Account</a></li>
 				  <li class="nav-item"><a href="#">Wishlist</a></li>
 				  <li class="nav-item"><a href="#">Blog</a></li>
@@ -136,9 +136,33 @@
 						    </ul>
 					    </div>
 					    <div class="bag d-flex justify-content-end align-items-center">
-					    	<a class="circle mx-1 d-flex justify-content-center align-items-center"><i class="fas fa-search"></i></a>
-					    	<a class="circle mx-1 d-flex justify-content-center align-items-center"><i class="fas fa-paste"></i></a>
-					    	<a class="circle mx-1 d-flex justify-content-center align-items-center"><i class="fas fa-shopping-bag"></i></a>
+					    	<div class="nav-item dropdown">
+					    		<a class="circle mx-1 d-flex justify-content-center align-items-center"href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					    			<i class="fas fa-search"></i>
+					    		</a>
+					    		<ul class="dropdown-menu px-2" aria-labelledby="navbarDropdown">
+						            <li><input class="dropdown-item form-control form-control-sm" type="text" placeholder="Type and hit enter"></li>
+							    </ul>
+					    	</div>
+					    	<div class="nav-item dropdown">
+					    		<a class="circle mx-1 d-flex justify-content-center align-items-center"href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					    			<i class="fas fa-paste"></i>
+					    		</a>
+					    		<ul class="dropdown-menu px-2" aria-labelledby="navbarDropdown">
+						            <li><div class="text-muted">You have no items to compare.</div></li>
+							    </ul>
+					    	</div>
+					    	<div class="nav-item dropdown">
+					    		<a class="circle mx-1 d-flex justify-content-center align-items-center"href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					    			<i class="fas fa-shopping-bag"></i>
+					    		</a>
+					    		<ul class="dropdown-menu px-2" aria-labelledby="navbarDropdown">
+						            <li>
+						            	<div class="alert alert-dark text-wrap" role="alert">Place your promotion here</div>
+						            	<div class="text-muted">You have no items in your shopping cart.</div>
+						            </li>
+							    </ul>
+					    	</div>
 					    	<span class="badge bg-light fs-6 text-dark rounded-pill">BAG (0)</span>
 						</div>
 				  	</div>
@@ -146,58 +170,79 @@
 			</div>
 
   		</div>
-  	<div class="slider">
-		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-			<ol class="carousel-indicators">
-			    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-			    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-			    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-			    <div class="carousel-item active">
-			    	<div style="background-image: url(img/slide_fw610.jpg);" class="image-item d-block w-100" alt="...">
-					    <div class="carousel-caption d-none d-md-block">
-					    	<img src="img/b20.png">
-					        <div class="fs-1 fw-bolder">SHOPPER</div>
-					        <div class="fs-5 fw-bolder" style="letter-spacing:1rem; ">BUILD YOUR ONLINE SHOP</div>
-				      	</div>
-			    	</div>
-			    </div>
-			    <div class="carousel-item">
-			      	<div style="background-image: url(img/sl02.jpg);" class="image-item d-block w-100" alt="...">
-					    <div class="carousel-caption d-none d-md-block">
-					        <div class="fs-1 text-dark">THE BEAUTY</div>
-					        <div class="fs-6 text-dark text-break">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-					        <button type="button" class="btn btn-light btn-lg">Learn more</button>
-				      	</div>
-			    	</div>
-				</div>
-			    <div class="carousel-item">
-				    <div style="background-image: url(img/sl03.jpg);" class="image-item d-block w-100" alt="...">
-					    <div class="carousel-caption d-none d-md-block">
-					        <div class="fs-1 text-dark">Third slide label</div>
-					        <div class="fs-6 text-dark text-break">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</div>
-					        <button type="button" class="btn btn-light btn-lg">Click Here</button>
-					    </div>
+	  	<div class="slider">
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+				<ol class="carousel-indicators">
+				    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+				    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+				    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+				    <div class="carousel-item active">
+				    	<div style="background-image: url(img/slide_fw610.jpg);" class="image-item img-fluid d-block w-100" alt="...">
+						    <div class="carousel-caption d-none d-md-block">
+						    	<img src="img/b20.png">
+						        <div class="fs-1 fw-bolder">SHOPPER</div>
+						        <div class="fs-5 fw-bolder" style="letter-spacing:1rem; ">BUILD YOUR ONLINE SHOP</div>
+					      	</div>
+				    	</div>
 				    </div>
+				    <div class="carousel-item">
+				      	<div style="background-image: url(img/sl02.jpg);" class="image-item img-fluid d-block w-100" alt="...">
+						    <div class="carousel-caption d-none d-md-block">
+						        <div class="fs-1 text-dark">THE BEAUTY</div>
+						        <div class="fs-6 text-muted text-break">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+						        <button type="button" class="btn btn-pink btn-light btn-lg">Learn more</button>
+					      	</div>
+				    	</div>
+					</div>
+				    <div class="carousel-item">
+					    <div style="background-image: url(img/sl03.jpg);" class="image-item img-fluid d-block w-100" alt="...">
+						    <div class="carousel-caption d-none d-md-block">
+						        <div class="fs-1 text-dark">slide label</div>
+						        <div class="fs-6 text-muted text-break">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</div>
+						        <button type="button" class="btn btn-pink btn-light btn-lg">Click Here</button>
+						    </div>
+					    </div>
+					</div>
 				</div>
-			</div>
-			<div class="carousel-controls">
-				<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-				    <span class="fas fa-chevron-circle-left" aria-hidden="true"></span>
-				    <span class="visually-hidden">Previous</span>
-				</a>
-			  	<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-			    	<span class="fas fa-chevron-circle-right" aria-hidden="true"></span>
-			   		<span class="visually-hidden">Next</span>
-			  	</a>
+				<div class="carousel-controls">
+					<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+					    <span class="fas fa-chevron-circle-left" aria-hidden="true"></span>
+					    <span class="visually-hidden">Previous</span>
+					</a>
+				  	<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+				    	<span class="fas fa-chevron-circle-right" aria-hidden="true"></span>
+				   		<span class="visually-hidden">Next</span>
+				  	</a>
+				</div>
 			</div>
 		</div>
-	</div>
   	
+  		<div class="main container my-5">
+  			<div class="main-banner d-md-flex justify-content-between">
+	  			<a class="banner col-sm-12 col-md-6 me-3 my-5 d-flex align-items-center">
+	  				<img class="img-fluid" src="img/banner_shfw1.jpg">
+	  				<div class="img-caption d-flex flex-column align-items-center">
+						        <div class="fs-1 text-dark">image label</div>
+						        <div class="fs-6 text-muted text-break">Praesent commodo cursus magna.</div>
+						        <button type="button" class="btn btn-pink btn-light btn-lg">Click Here</button>
+						    </div>
+	  			</a>
+	  			<a class="banner col-sm-12 col-md-6 mf-3 my-5 d-flex align-items-center">
+	  				<img class="img-fluid" src="img/banner_shfw2.jpg">
+	  				<div class="img-caption d-flex flex-column align-items-center">
+						        <div class="fs-1 text-dark">image label</div>
+						        <div class="fs-6 text-muted text-break">Praesent commodo cursus magna.</div>
+						        <button type="button" class="btn btn-pink btn-light btn-lg">Click Here</button>
+						    </div>
+	  			</a>
+  			</div>
+  		</div>
 </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
@@ -207,5 +252,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
+    <script type="text/javascript">
+
+	</script>
   </body>
 </html>
