@@ -34,12 +34,13 @@
 	background-color: #fff;
 }
 .circle {
-	width: 2rem;
-	height: 2rem;
+	width: 2.2rem;
+	height: 2.2rem;
 	border-radius: 50%;
 	background-color: #ffb4b1;
 	text-decoration: none;
 	color: #fff;
+	transition: all 0.3s;
 }
 .navbar-brand span {
 	color: #ffb4b1;
@@ -140,4 +141,74 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
+}
+.nav-tabs .nav-item .nav-link {
+	color: rgba(0, 0, 0, 0.67);
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	border-bottom: 3px solid #ffb4b1 !important; 
+	background-color: #f9f9f9 !important;
+}
+.tab-content .card {
+	border:1rem solid #fff;
+}
+.tab-content .card .hover:before {
+	content: '$234.00';
+    position: absolute;
+    top: 9rem;
+    right: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #fff;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    border: 3rem solid #ffb4b1;
+    border-radius: 50%;
+}
+.tab-content .card .hover{
+	display: none;
+}
+.tab-content .card:hover .hover {
+	display: block;
+}
+.tab-content .card:hover .regular {
+	display: none;
+}
+.card-body .regular span {
+	color: #ffb4b1;
+
+}
+.swatch-list .swatch-label{
+	width: 1rem;
+	border-radius: 20%;
+	margin: 0 0.2rem;
+}
+.hover .btn i {
+	margin: 0 1rem;
+	font-size: 1.2rem;
+	color: #ffb4b1;
+	transition: color 0.3s;
+}
+.hover .btn:hover i{
+	color: #000;
+}
+.hover .add-link {
+	box-shadow: inset 0px 5px 6px -4px rgba(0, 0, 0, 0.15);
+	padding: 1rem 0;
+	width: 100%; 
+}
+.hover .card-link {
+	text-decoration: none;
+	color: #000;
+	font-size: 0.75rem;
+	transition: transform 0.4s ease-in-out;
+}
+.hover .card-link:hover span {
+	transform: rotate(180deg);
+}
+.hover .card-link:hover {
+	color: #000 !important;
 }
